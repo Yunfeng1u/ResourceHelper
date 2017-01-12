@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">ResourceHelper</string>
+
+    <array name="demo">
+        <item>金</item>
+        <item>木</item>
+        <item>水</item>
+        <item>火</item>
+        <item>你</item>
+    </array>
 </resources>
