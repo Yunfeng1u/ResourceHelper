@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        TextView tv_0 = (TextView) findViewById(R.id.tv_0);
         TextView tv_1 = (TextView) findViewById(R.id.tv_1);
         TextView tv_2 = (TextView) findViewById(R.id.tv_2);
         TextView tv_3 = (TextView) findViewById(R.id.tv_3);
@@ -32,6 +33,11 @@ public class MainActivity extends AppCompatActivity {
         final TextView tv_5 = (TextView) findViewById(R.id.tv_5);
         TextView tv_6 = (TextView) findViewById(R.id.tv_6);
         TextView tv_7 = (TextView) findViewById(R.id.tv_7);
+
+
+        int dpi = ResourceHelper.getResources().getDisplayMetrics().densityDpi;
+        String text = ResourceHelper.getResources().getString(R.string.dpi_, String.valueOf(dpi));
+        tv_0.setText(text);
 
 
         tv_1.setTextSize(ResourceHelper.getSpPixelSize(R.dimen.large_text_size));

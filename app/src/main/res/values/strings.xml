@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">ResourceHelper</string>
 
+    <string name="dpi_">dpi: %1$s</string>
+
     <array name="demo">
         <item>金</item>
         <item>木</item>
